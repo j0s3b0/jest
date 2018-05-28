@@ -1,6 +1,6 @@
-const login = require('../src/index');
+const login = require('../index');
 
 test("The registered student must be registered", () => {
-  expect(login("ss")).toBeTruthy();
+  expect(login("jose")).toBeTruthy();
   //toBeTruthy
 });
