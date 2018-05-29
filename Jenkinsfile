@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'node:chakracore-8.11.1'
+            image 'node:6-alpine'
             args '-p 3000:3000'  
         }
     }
