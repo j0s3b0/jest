@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'node:7.8-slim' 
+            image 'node:6-alpine'
             args '-p 3000:3000'  
         }
     }
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install --save-dev jest' 
+                sh 'npm install --save-dev jest'
             }
         }
         stage('Testing with jest'){
